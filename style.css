@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    overflow:hidden;
+}
+
+/***************************** left Section*******************************/
+
+.left {
+    position: relative;
+    width: 40vw;
+}
+
+.logo {
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.leftImg  {
+    width: 100%
+}
+
+/***************************** Right Section*******************************/
+
+.right {
+    width: 60vw;
+    padding: 60px 100px 0 50px;
+}
+
+    /************************* Right Nav Section**************************/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar > .line {
+    height: 1.6px;
+    flex-grow: 1;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.navbar > a {
+    color: #797878;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.line + a {
+    color: #000000;
+}
+
+.menu {
+    display: none;
+}
+
+    /************************* Right Hero Section**************************/
+
+.heroTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1 {
+    position: relative;
+    line-height: 110px;
+}
+
+h1 > p {
+    font-family: 'Merriweather', serif;
+    font-size: 116px;
+    font-weight: 900;
+}
+
+h1 > p:first-child {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 1px;
+}
+
+h1 > span {
+    font-family: 'Merriweather', serif;
+    font-size: 116px;
+    font-weight: 900;
+    margin-left: 120px;
+}
+
+h1 > span + span {
+    color: #797878;
+    font-size: 38px;
+    font-weight: 300;
+    position: absolute;
+    left: 370px;
+    bottom: 15px;
+    line-height: normal;
+}
+
+.social {
+    justify-self: flex-end;
+    width: 70px;
+    height: 300px
+}
+
+.social > img {
+    display: block;
+    margin: 40px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.heroBtn {
+    padding: 15px 60px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+/************************* Right Display Section**************************/
+
+.display {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.types {
+    position: relative;
+}
+
+.types > .line {
+    height: 240px;
+    width: 1px;
+    background-color: #b8b3b3;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    z-index: -1;
+}
+
+.type {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.type > .dot {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+    background-color: #797878;
+    border-radius: 10px;
+}
+
+.type > .big-dot {
+    width: 15px;
+    height: 15px;
+    margin-left: 0;
+    background-color: #000000;
+}
+
+.type ~ .type > p {
+    color: #797878;
+}
+
+.dance {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    justify-self: flex-end;
+}
+
+.dance p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.quote {
+    width: 50px;
+}
+
+.danceImg {
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.dance > img {
+    width: 25px;
+    height: 100px;
+    margin-right: -10px;
+}

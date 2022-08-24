@@ -1,0 +1,107 @@
+@media screen and (max-width: 1210px) {
+  .mainContainer {
+    display: flex;
+    height: 100vh;
+    overflow: visible;
+  }
+  /***************************** left Section*******************************/
+
+  .left {
+    width: 0;
+  }
+
+  .logo {
+    width: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 0 20px;
+  }
+
+  .leftImg {
+    display: none;
+  }
+
+  /***************************** Right Section*******************************/
+
+  .right {
+    width: 100vw;
+    padding: 20px 20px 0 20px;
+  }
+
+  /************************* Right Nav Section**************************/
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar > .line {
+    flex-grow: 0;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  /************************* Right Nav Section**************************/
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+  /************************* Right Hero Section**************************/
+
+  .heroTop {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  h1 > span {
+    margin-left: 0;
+    display: block;
+  }
+
+  h1 > span + span {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0 20px 0;
+  }
+
+  /************************* Right Display Section**************************/
+
+  .display {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .danceImg {
+    width: 80vw;
+    height: auto;
+    position: relative;
+  }
+
+  .dance > img {
+    margin-left: 10px;
+  }
+}
